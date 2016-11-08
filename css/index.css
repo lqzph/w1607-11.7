@@ -16,7 +16,7 @@ a{
     background: #444;
 }
 .head_right{
-    width: 976px;
+    width: 90%;
     margin: auto;
     line-height: 40px;
 }
@@ -31,11 +31,12 @@ a{
     width: 100%;
     height: 44px;
 }
-.nav{
+
+.nav,.navv{
     background: #000000;
     height: 44px;
 }
-.nav .nav_left{
+.navv .nav_left{
     width: 50px;
     height: 40px;
     display: block;
@@ -63,22 +64,22 @@ a{
 .nav_right:hover{
     background:url(../img/nav5.png) no-repeat;
 }
-.col-m-4 .nav-m{
+.nav .nav_m{
     width: 50px;
     height: 40px;
     display: block;
     background:url(../img/nav1.png) no-repeat;
 }
-.col-m-4 .nav-m:hover{
+.col-m-4 .nav_m:hover{
     background:url(../img/nav4.png) no-repeat;
 }
-.col-m-4 .nav-l{
+.nav .nav-l{
     width: 50px;
     height: 40px;
     display: block;
     background:url(../img/nav2.png) no-repeat;
 }
-.col-m-4 .nav-l{
+.nav .nav-l:hover{
     background:url(../img/nav5.png) no-repeat;
 }
 a[class*=col-s-hide]{
@@ -109,7 +110,7 @@ a[class*=col-s-hide]:hover{
     background: #F2F2F2;
 }
 .foot_head{
-    width: 1200px;
+    width: 90%;
     margin: auto;
     color:#717F7D;
     font-size: 14px;
@@ -120,9 +121,46 @@ a[class*=col-s-hide]:hover{
 .foot li{
     color:#717F7D;
     font-size: 14px;
-    line-height: 25px;
+    line-height: 30px;
 }
 .foot li:hover{
     color:#333;
     text-decoration: underline;
+}
+.fl~li{
+    display: none;
+}
+.footer{
+    width: 90%;
+    height:50px;
+    margin:auto;
+    color:#717F7D ;
+    border-bottom: 2px solid #E3E3E3;
+    font-size: 12px;
+}
+.footer p{
+    line-height:40px;
+}
+.foo{
+    width: 90%;
+    height:30px;
+    margin:auto;
+    color:#717F7D ;
+    font-size: 12px;
+}
+.foo p{
+    line-height: 1px;
+}
+.foo a{
+    color:#666;
+}
+.footer a{
+    color:blue;
+}
+.last{
+    display: block;
+    width: 90%;
+    margin: auto;
+    color:#666;
+    font-size: 12px;
 }
