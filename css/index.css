@@ -1,0 +1,128 @@
+body,ul,li{
+    padding:0;
+    margin: 0;
+    list-style: none;
+}
+a{
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.header{
+    width: 100%;
+    height: 40px;
+    background: #444;
+}
+.head_right{
+    width: 976px;
+    margin: auto;
+    line-height: 40px;
+}
+.head_right span{
+    display: block;
+    float: right;
+    color:#8F8F90;
+    font-size: 12px;
+}
+.nan{
+    background: #000;
+    width: 100%;
+    height: 44px;
+}
+.nav{
+    background: #000000;
+    height: 44px;
+}
+.nav .nav_left{
+    width: 50px;
+    height: 40px;
+    display: block;
+     background:url(../img/nav.png) no-repeat;
+ }
+.nav_left:hover{
+    background:url(../img/nav3.png) no-repeat;
+}
+.nav_con{
+    width: 50px;
+    height: 40px;
+    display: block;
+    background:url(../img/nav1.png) no-repeat;
+}
+.nav_con:hover{
+
+    background:url(../img/nav4.png) no-repeat;
+}
+.nav_right{
+    width: 50px;
+    height: 40px;
+    display: block;
+    background:url(../img/nav2.png) no-repeat;
+}
+.nav_right:hover{
+    background:url(../img/nav5.png) no-repeat;
+}
+.col-m-4 .nav-m{
+    width: 50px;
+    height: 40px;
+    display: block;
+    background:url(../img/nav1.png) no-repeat;
+}
+.col-m-4 .nav-m:hover{
+    background:url(../img/nav4.png) no-repeat;
+}
+.col-m-4 .nav-l{
+    width: 50px;
+    height: 40px;
+    display: block;
+    background:url(../img/nav2.png) no-repeat;
+}
+.col-m-4 .nav-l{
+    background:url(../img/nav5.png) no-repeat;
+}
+a[class*=col-s-hide]{
+    height: 44px;
+    line-height: 44px;
+}
+a[class*=col-s-hide]:hover{
+    color:#666;
+}
+
+
+
+
+
+
+.content{
+    margin: auto;
+    text-align: center;
+}
+
+
+
+
+
+
+.foot{
+    width: 100%;
+    background: #F2F2F2;
+}
+.foot_head{
+    width: 1200px;
+    margin: auto;
+    color:#717F7D;
+    font-size: 14px;
+    line-height: 50px;
+    border-bottom: 2px solid #E3E3E3;
+}
+
+.foot li{
+    color:#717F7D;
+    font-size: 14px;
+    line-height: 25px;
+}
+.foot li:hover{
+    color:#333;
+    text-decoration: underline;
+}
