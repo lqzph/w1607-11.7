@@ -20,7 +20,7 @@ a {
 }
 /*小屏的时候*/
 .container {
-  width: 735px;
+  width: 600px;
   margin: auto;
 }
 .container > .row {
@@ -342,9 +342,9 @@ a {
   display: none;
 }
 /*中屏*/
-@media screen and (min-width: 735px) {
+@media screen and (min-width: 800px) {
   .container {
-    width: 735px;
+    width: 800px;
     margin: auto;
   }
   .container > .row > .col-m-1 {
@@ -646,9 +646,9 @@ a {
   }
 }
 /*大屏*/
-@media screen and (min-width: 1075px) {
+@media screen and (min-width: 1200px) {
   .container {
-    width: 1075px;
+    width: 1200px;
     margin: auto;
   }
   .container > .row > .col-l-1 {

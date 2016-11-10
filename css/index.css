@@ -32,6 +32,7 @@ a{
     height: 44px;
 }
 
+
 .nav,.navv{
     background: #000000;
     height: 44px;
@@ -40,59 +41,212 @@ a{
     width: 50px;
     height: 40px;
     display: block;
-     background:url(../img/nav.png) no-repeat;
+    position: relative;
+     background:url(../img/nav.png) no-repeat center;
  }
 .nav_left:hover{
-    background:url(../img/nav3.png) no-repeat;
+    background:url(../img/nav3.png) no-repeat center;
 }
 .nav_con{
-    width: 50px;
+    width: 100%;
     height: 40px;
     display: block;
-    background:url(../img/nav1.png) no-repeat;
+    background:url(../img/nav1.png) no-repeat center;
 }
 .nav_con:hover{
-
-    background:url(../img/nav4.png) no-repeat;
+    background:url(../img/nav4.png) no-repeat center;
 }
 .nav_right{
     width: 50px;
     height: 40px;
     display: block;
-    background:url(../img/nav2.png) no-repeat;
+    float: right;
+    background:url(../img/nav2.png) no-repeat center;
 }
 .nav_right:hover{
-    background:url(../img/nav5.png) no-repeat;
+    background:url(../img/nav5.png) no-repeat center;
 }
 .nav .nav_m{
-    width: 50px;
+    width: 80px;
     height: 40px;
     display: block;
-    background:url(../img/nav1.png) no-repeat;
+    background:url(../img/nav1.png) no-repeat center;
 }
 .col-m-4 .nav_m:hover{
-    background:url(../img/nav4.png) no-repeat;
+    background:url(../img/nav4.png) no-repeat center;
 }
 .nav .nav-l{
-    width: 50px;
+    width: 80px;
     height: 40px;
     display: block;
-    background:url(../img/nav2.png) no-repeat;
+    float:right;
+    background:url(../img/nav2.png) no-repeat center;
 }
 .nav .nav-l:hover{
-    background:url(../img/nav5.png) no-repeat;
+    float:right;
+    background:url(../img/nav5.png) no-repeat center;
 }
 a[class*=col-s-hide]{
     height: 44px;
+    text-align: center;
     line-height: 44px;
 }
 a[class*=col-s-hide]:hover{
-    color:#666;
+    color:#919191;
+}
+.son{
+    background: #000;
+    position: absolute;
+    display: none;
+    z-index: 10000;
+}
+.son a{
+    display: block;
+    line-height: 44px;
+    width: 90%;
+    color: #EFEFEF;
+    margin: auto;
+    border-bottom: 1px solid #333;
+}
+.son a:first-child{
+    margin-top: 20px;
+}
+.son a:last-child{
+    border-bottom: 1px solid #C0C0C0;
+}
+.son a:hover{
+    color:#919191;
 }
 
 
 
 
+/*banner*/
+.banner{
+   height: 540px;
+   width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.ban{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.ban div{
+    width: 100%;
+    height: 100%;
+}
+.ban div a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.ban .one{
+  background:#fff url(../img/bg_s.jpg) center bottom no-repeat ;
+    background-size:contain;
+    position: absolute;
+    left:0;
+    top:0;
+}
+.ban .two{
+    background:#000 url(../img/bg3.jpg) center bottom no-repeat;
+    background-size: cover;
+    position: absolute;
+    left:100%;
+    top:0;
+}
+.ban .three{
+    background:#000 url(../img/bg2_s.jpg) center bottom no-repeat;
+    background-size: cover;
+    position: absolute;
+    left:100%;
+    top:0;
+}
+
+.btn{
+    width: 170px;
+    height: 10px;
+    position: absolute;left:0;
+    right:0;
+    bottom:30px;
+    margin: auto;
+    z-index: 999;
+}
+.btns_list{
+    width: 50px;
+    height: 100%;
+    float: left;
+    /*border-radius: 5px;*/
+    border: 1px solid #666;
+    margin-right: 10px;
+    z-index: 1000;
+}
+.btns_list:last-child{
+    margin: 0;
+}
+.progress{
+    width:0;
+    height: 100%;
+    background: #666;
+    z-index: 1000;
+}
+.left{
+    width: 25%;
+    height: 100%;
+    position: absolute;
+    left:0;
+    top: 0;
+    z-index: 999;
+    /*background: red;*/
+}
+.right{
+    width: 25%;
+    height: 100%;
+    position: absolute;
+    right:0;
+    top: 0;
+    z-index: 999;
+}
+.left .leftbtn{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #666;
+    text-align: center;
+    color:#919191;
+    line-height: 50px;
+    position: absolute;
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    opacity: 0;
+    z-index: 999;
+}
+.rightbtn{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #666;
+    text-align: center;
+    color:#919191;
+    line-height: 50px;
+    position: absolute;
+    right: 20px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    opacity: 0;
+    transition: opacity 1s;
+    z-index: 999;
+}
+.right:hover>.rightbtn{
+    opacity: 1;
+}
+.left:hover>.leftbtn{
+    opacity: 1;
+}
 
 
 .content{
@@ -127,32 +281,43 @@ a[class*=col-s-hide]:hover{
     color:#333;
     text-decoration: underline;
 }
-.fl~li{
+.fl>ul{
     display: none;
 }
-.footer{
+
+.foot_letter .row .col-s-36 li{
     width: 90%;
-    height:50px;
-    margin:auto;
-    color:#717F7D ;
-    border-bottom: 2px solid #E3E3E3;
-    font-size: 12px;
+    margin-left: 5%;
+    margin: auto;line-height: 40px;
+    border-bottom: 1px solid #E3E3E3;
 }
-.footer p{
-    line-height:40px;
-}
-.foo{
+.footer{
     width: 90%;
     height:30px;
     margin:auto;
     color:#717F7D ;
+    /*border-bottom: 2px solid #E3E3E3;*/
+    font-size: 12px;
+}
+.footer p{
+    line-height:25px;
+}
+.foo{
+    width: 90%;
+    height:50px;
+    margin:auto;
+    color:#717F7D ;
+    margin-top: 20px;
     font-size: 12px;
 }
 .foo p{
-    line-height: 1px;
+    line-height: 20px;
 }
 .foo a{
     color:#666;
+}
+.foo span img{
+    margin-top: 5px;
 }
 .footer a{
     color:blue;
@@ -162,5 +327,80 @@ a[class*=col-s-hide]:hover{
     width: 90%;
     margin: auto;
     color:#666;
+    height:50px;
+    line-height: 50px;
     font-size: 12px;
 }
+
+
+
+@media screen and (min-width: 735px) {
+    .ban .one {
+        background: #fff url(../img/bg_m.jpg) center bottom no-repeat;
+        background-size: contain;
+    }
+
+    .ban .three {
+        background: #000 url(../img/bg2_m.jpg) center bottom no-repeat;
+        background-size: cover;
+    }
+    .foo p{line-height: 1px}
+    .foo span img{
+        margin-top: 5px;
+    }
+    .footer{
+        border-bottom: 2px solid #E3E3E3;
+        height: 30px;
+        margin-top: 10px;
+    }
+    .last{
+        margin-top: -10px;
+        height: 20px;
+        line-height: 20px;
+    }
+    .foo{
+        height: 30px;
+    }
+    .foo span img{
+        margin-top: -10px;
+    }
+}
+
+ @media screen and (min-width: 1075px){
+        .ban .one{
+            background:#fff url(../img/bg_l.jpg) center bottom no-repeat;
+            background-size: contain;
+        }
+       .ban .three{
+         background:#000 url(../img/bg2_l.jpg) center bottom no-repeat;
+         background-size:contain;
+      }
+       .foo p{line-height: 1px}
+       .foo span img{
+           margin-top: 5px;
+       }
+       .footer{
+           border-bottom: 2px solid #E3E3E3;
+           height: 30px;
+           margin-top: 10px;
+       }
+       .last{
+           margin-top: -10px;
+           height: 20px;
+           line-height: 20px;
+       }
+       .foo{
+           height: 30px;
+       }
+     .foo span img{
+         margin-top: -10px;
+     }
+
+
+
+    }
+
+
+
+
+
