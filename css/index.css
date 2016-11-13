@@ -166,7 +166,7 @@ a[class*=col-s-hide]:hover{
 
 .btn{
     width: 170px;
-    height: 10px;
+    height:3px;
     position: absolute;left:0;
     right:0;
     bottom:30px;
@@ -178,9 +178,11 @@ a[class*=col-s-hide]:hover{
     height: 100%;
     float: left;
     /*border-radius: 5px;*/
-    border: 1px solid #666;
+    /*border-: 1px solid #666;*/
     margin-right: 10px;
     z-index: 1000;
+    background-color: rgba(0,0,0,0.4);
+
 }
 .btns_list:last-child{
     margin: 0;
@@ -213,8 +215,10 @@ a[class*=col-s-hide]:hover{
     height: 50px;
     border-radius: 50%;
     background: #666;
+    /*font-weight: bold;*/
+    font-size: 30px;
     text-align: center;
-    color:#919191;
+    color:#9F9F9F;
     line-height: 50px;
     position: absolute;
     left: 20px;
@@ -229,8 +233,10 @@ a[class*=col-s-hide]:hover{
     height: 50px;
     border-radius: 50%;
     background: #666;
+    /*font-weight: bold;*/
+    font-size: 30px;
     text-align: center;
-    color:#919191;
+    color:#9F9F9F;
     line-height: 50px;
     position: absolute;
     right: 20px;
@@ -242,10 +248,10 @@ a[class*=col-s-hide]:hover{
     z-index: 999;
 }
 .right:hover>.rightbtn{
-    opacity: 1;
+    opacity: 0.3;
 }
 .left:hover>.leftbtn{
-    opacity: 1;
+    opacity: 0.3;
 }
 
 
@@ -253,9 +259,37 @@ a[class*=col-s-hide]:hover{
     margin: auto;
     text-align: center;
 }
-
-
-
+.content div[class*=col-l]{
+    height: 200px;
+}
+.con_one{
+    width: 200px;
+    height: 500px;
+    background-size: contain;
+    border:2px solid #fff ;
+    background: url(../img/a1.jpg) center;
+}
+.con_two{
+    width: 200px;
+    height: 500px;
+    background-size: contain;
+    border:2px solid #fff ;
+    background: url(../img/a2.jpg) center;
+}
+.con_three{
+    width: 200px;
+    height: 500px;
+    background-size: contain;
+    border:2px solid #fff ;
+    background: url(../img/a3.jpg) center;
+}
+.con_four{
+    width: 200px;
+    height: 500px;
+    background-size: contain;
+    border:2px solid #fff ;
+    background: url(../img/a4.jpg) center;
+}
 
 
 
@@ -277,13 +311,24 @@ a[class*=col-s-hide]:hover{
     font-size: 14px;
     line-height: 30px;
 }
-.foot li:hover{
-    color:#333;
-    text-decoration: underline;
+
+.fl{
+    padding-right: 20px;
 }
 .fl>ul{
     display: none;
 }
+.fl h3{
+    display: inline-block;
+}
+.fl span{
+    float: right;
+    display: inline-block;
+}
+.fl ul li{
+    text-decoration: none;
+}
+
 
 .foot_letter .row .col-s-36 li{
     width: 90%;
@@ -339,11 +384,32 @@ a[class*=col-s-hide]:hover{
         background: #fff url(../img/bg_m.jpg) center bottom no-repeat;
         background-size: contain;
     }
-
+    .ban .two{
+        background:#000 url(../img/bg3.jpg) center bottom no-repeat;
+        background-size: cover;
+        position: absolute;
+        left:100%;
+        top:0;
+    }
     .ban .three {
         background: #000 url(../img/bg2_m.jpg) center bottom no-repeat;
         background-size: cover;
     }
+
+    .con_one{
+        background: url(../img/b1.jpg);
+    }
+    .con_two{
+        background: url(../img/b2.jpg);
+    }
+    .con_three{
+        background: url(../img/b3.jpg);
+    }
+    .con_four{
+        background: url(../img/b4.jpg);
+    }
+
+
     .foo p{line-height: 1px}
     .foo span img{
         margin-top: 5px;
@@ -364,6 +430,10 @@ a[class*=col-s-hide]:hover{
     .foo span img{
         margin-top: -10px;
     }
+    .foot li:hover{
+        color:#333;
+        text-decoration: underline;
+    }
 }
 
  @media screen and (min-width: 1075px){
@@ -371,11 +441,50 @@ a[class*=col-s-hide]:hover{
             background:#fff url(../img/bg_l.jpg) center bottom no-repeat;
             background-size: contain;
         }
+     .ban .two{
+         background:#000 url(../img/bg3.jpg) center bottom no-repeat;
+         background-size: cover;
+         position: absolute;
+         left:100%;
+         top:0;
+     }
        .ban .three{
          background:#000 url(../img/bg2_l.jpg) center bottom no-repeat;
          background-size:contain;
       }
-       .foo p{line-height: 1px}
+
+     .content .con_one{
+         width: 200px;
+         height: 500px;
+         background-size: contain;
+         border:2px solid #fff ;
+         background: url(../img/c1.jpg) no-repeat;
+
+     }
+     .con_two{
+         width: 200px;
+         height: 500px;
+         background-size: contain;
+         border:2px solid #fff ;
+         background: url(../img/c2.jpg);
+     }
+     .con_three{
+         width: 200px;
+         height: 500px;
+         background-size: contain;
+         border:2px solid #fff ;
+         background: url(../img/c3.jpg);
+     }
+     .con_four{
+         width: 200px;
+         height: 500px;
+         background-size: contain;
+         border:2px solid #fff ;
+         background: url(../img/c4.jpg);
+     }
+
+
+     .foo p{line-height: 1px}
        .foo span img{
            margin-top: 5px;
        }
@@ -394,6 +503,10 @@ a[class*=col-s-hide]:hover{
        }
      .foo span img{
          margin-top: -10px;
+     }
+     .foot li:hover{
+         color:#333;
+         text-decoration: underline;
      }
 
 

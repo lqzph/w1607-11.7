@@ -9,10 +9,17 @@ $(function () {
     $(".nav_left").click(function () {
         $(".son").slideToggle(200);
     })
-    // $(".fl>h3").click(function () {
-    //     var index=$(this).index(".fl>h3");
-    //     $(".fl>ul").eq(index).slideToggle(200)
-    // })
+    $(".fl>h3").click(function () {
+        var index=$(this).index(".fl>h3");
+        $(".fl>ul").eq(index).slideToggle(200)
+    })
+
+    $(".fl ul li").mouseover (function () {
+        var index=$(this).index(".fl ul li");
+        $(".fl ul li").css({textDecoration:"none"}).eq(index).css({textDecoration:"underline"})
+
+    })
+
  // banner
     var now=0;
     var next=0;
@@ -24,8 +31,8 @@ $(function () {
                 next=0;
                 falg=false;
             }
-            $(".list").eq(now).animate({width:"80%",height:"80%"},500 ).css({zIndex:0});
-            $(".list").eq(next).animate({left:0},500,function () {
+            $(".list").eq(now).animate({width:"80%",height:"80%"}).css({zIndex:0});
+            $(".list").eq(next).animate({left:"0"},function () {
                 $(".list").eq(now).css({left:"100%",width:"100%",height:"100%"}).css({zIndex:1}) ;
                 now=next;
                 time=0;
@@ -52,7 +59,6 @@ $(function () {
     $(window).focus(function () {
         t=setInterval(move,3000)
         t1=setInterval(move1,50)
-
     })
     function stop() {
         clearInterval(t)
@@ -64,7 +70,7 @@ $(function () {
         if(next>now){
             $(".list").eq(now).animate({width:"80%",height:"80%"},500 ).css({zIndex:0});
             $(".list").eq(next).animate({left:0},500,function () {
-                $(".list").eq(now).css({left:"100%",width:"100%",height:"100%"}).css({}) ;
+                $(".list").eq(now).css({left:"100%",width:"100%",height:"100%"});
                 now=next;
             }).css({zIndex:1})
         }else if(next<now){
@@ -81,7 +87,7 @@ $(function () {
     })
     $(".leftbtn").click(function () {
         next--;
-        if(next==-1){
+        if(next==0){
             next=2;
         }
         stop()
